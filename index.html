@@ -1,26 +1,70 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
 <html>
-
 <head>
-<title>HJ's home</title>
+    <title>HJ's home</title>
+    <meta charset="utf-8">
+    <style>
+        #grid{
+            display:grid;
+            grid-template-columns: 250px 1fr;
+        }
+        #grid #article{
+            
+        }
+        body{
+            margin:0;
+        }
+        a {
+            color:indianred;
+            text-decoration: none;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+            border-bottom: 5px indianred dashed;
+            margin: 0;
+            padding: 20px;
+
+        }
+        #grid ol{
+            color:indianred;
+            border-right: 5px dashed indianred;
+            width:150px;
+            margin: 0px;   
+            padding:30px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1><a href="https://blog.naver.com/happ22ness" target="_blank">한형주</a></h1>
-<ol>
-    <li> <a href="profile.html" target="_blank">PROFILE </a></li>
-    <li> <a href="likes.html" target="_blank">What she loves </a></li>
-    <li> <a href="dreams.html" target="_blank">What she dreams</a></li>
-</ol> 
+    <div id="box">
+        <h1><a href="https://blog.naver.com/happ22ness" target="_blank">! MORE ABOUT 한형주</a></h1>
+    </div>
+
+    <div id="grid">
+        <ol>
+            <li> <a href="profile.html" target="_blank" class="saw">PROFILE </a></li>
+            <li> <a href="likes.html" target="_blank" class="saw">What she loves </a></li>
+            <li> <a href="dreams.html" target="_blank">What she dreams</a></li>
+        </ol>
 
 
-<input type="checkbox"> 암것도 없긴한데 눌러보고싶으면 눌러보세용ㅎㅋ
+        <!--
+        <h1><a href="https://blog.naver.com/happ22ness" target="_blank">한형주</a></h1>
+        <ol>
+            <li> <a href="profile.html" target="_blank">PROFILE </a></li>
+            <li> <a href="likes.html" target="_blank">What she loves </a></li>
+            <li> <a href="dreams.html" target="_blank">What she dreams</a></li>
+        </ol> 
+        -->
+        <div id="article">
+            <h2 style="color:indianred;">HTML이란 무엇인가?</h2>
+            <a href="https://terms.naver.com/entry.naver?docId=1168097&cid=40942&categoryId=32838" target="_blank"
+            title="html5 specification">
+            HTML is..</a>
+        </div>
+    </div>
 
-<h2>HTML이란 무엇인가?</h2>
-<a href="https://terms.naver.com/entry.naver?docId=1168097&cid=40942&categoryId=32838" target="_blank"
-title="html5 specification">
-HTML is..</a>
 <br></br>
 <br></br>
 <div id="disqus_thread"></div>
@@ -45,3 +89,10 @@ HTML is..</a>
 
 </body>
 </html>
+
+<!--
+#box{
+    border:5px solid rgba(255, 254, 165, 0.781);
+    display: grid;
+}
+-->
